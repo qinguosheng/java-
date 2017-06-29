@@ -3,18 +3,18 @@ package com.sheng.factory;
 public class FactoryTest {
 
 	public static void main(String[] args) {
-		// ===========Ò»°ãµÄÓÃ·¨============
-		// Í¨¹ı×ÓÀàAppleÊµÀı»¯½Ó¿Ú
+		// ===========ä¸€èˆ¬çš„ç”¨æ³•============
+		// é€šè¿‡å­ç±»Appleå®ä¾‹åŒ–æ¥å£
 		Fruit fruit = new Apple();
-		// µ÷ÓÃeat()·½·¨
+		// è°ƒç”¨eat()æ–¹æ³•
 		fruit.eat();
 
-		// ===========Ê¹ÓÃ¹¤³§µÄ·½·¨============
-		// ¶¨Òå½Ó¿Ú¶ÔÏó
+		// ===========ä½¿ç”¨å·¥å‚çš„æ–¹æ³•============
+		// å®šä¹‰æ¥å£å¯¹è±¡
 		Fruit fruitFactory = null;
-		// Í¨¹ı¹¤³§»ñµÃÊµÀı
+		// é€šè¿‡å·¥å‚è·å¾—å®ä¾‹
 		fruitFactory = Factory.getInstance("orange");
-		// µ÷ÓÃ·½·¨
+		// è°ƒç”¨æ–¹æ³•
 		fruitFactory.eat();
 
 	}

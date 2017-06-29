@@ -1,29 +1,29 @@
 package com.sheng.factory;
 
 /*
- * ¶¨ÒåÒ»¸öË®¹ûµÄ½Ó¿Ú
+ * å®šä¹‰ä¸€ä¸ªæ°´æœçš„æ¥å£
  */
 public interface Fruit {
-	// ³ÔË®¹ûµÄ·½·¨
+	// åƒæ°´æœçš„æ–¹æ³•
 	public void eat();
 }
 
 /**
- * ¶¨Òå×ÓÀàApple
+ * å®šä¹‰å­ç±»Apple
  */
 class Apple implements Fruit {
-	// ¸²Ğ´eat()·½·¨
+	// è¦†å†™eat()æ–¹æ³•
 	public void eat() {
-		System.out.println("*** ³ÔÆ»¹û");
+		System.out.println("*** åƒè‹¹æœ");
 	}
 }
 
 /**
- * ¶¨Òå×ÓÀàOrange
+ * å®šä¹‰å­ç±»Orange
  */
 class Orange implements Fruit {
-	// ¸²Ğ´eat()·½·¨
+	// è¦†å†™eat()æ–¹æ³•
 	public void eat() {
-		System.out.println("*** ³ÔéÙ×Ó");
+		System.out.println("*** åƒæ©˜å­");
 	}
 }

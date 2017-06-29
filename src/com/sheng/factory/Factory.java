@@ -1,21 +1,21 @@
 package com.sheng.factory;
 
 /**
- * ¶¨ÒåÉú²ú¸÷ÖÖË®¹ûµÄ¹¤³§
+ * å®šä¹‰ç”Ÿäº§å„ç§æ°´æœçš„å·¥å‚
  */
 public class Factory {
 	public static Fruit getInstance(String className) {
-		// ¶¨Òå½Ó¿Ú¶ÔÏó
+		// å®šä¹‰æ¥å£å¯¹è±¡
 		Fruit fruit = null;
 		
-		// "apple".equals(className)ÕâÑùĞ´¿ÉÒÔ±ÜÃâ¿ÕÖ¸ÏòÒì³££¬
-		// ÒòÎªµ±className = null Ê±£¬nullÊÇ²»ÄÜµ÷ÓÃequals()·½·¨µÄ
-		// ÅĞ¶ÏÊÇÄÄ¸ö×ÓÀàµÄ±ê¼Ç
+		// "apple".equals(className)è¿™æ ·å†™å¯ä»¥é¿å…ç©ºæŒ‡å‘å¼‚å¸¸ï¼Œ
+		// å› ä¸ºå½“className = null æ—¶ï¼Œnullæ˜¯ä¸èƒ½è°ƒç”¨equals()æ–¹æ³•çš„
+		// åˆ¤æ–­æ˜¯å“ªä¸ªå­ç±»çš„æ ‡è®°
 		if ("apple".equals(className)) {
-			// Í¨¹ıApplÀàÊµÀı»¯½Ó¿Ú
+			// é€šè¿‡Applç±»å®ä¾‹åŒ–æ¥å£
 			fruit = new Apple();
 		} else if("orange".equals(className)) {
-			// Í¨¹ıOrangeÀàÊµÀı»¯½Ó¿Ú
+			// é€šè¿‡Orangeç±»å®ä¾‹åŒ–æ¥å£
 			fruit = new Orange();
 		}
 		return fruit;

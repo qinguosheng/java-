@@ -4,34 +4,34 @@ public class SingletonTest {
 
 	public static void main(String[] args) {
 		
-		// =======  ¶öººÄ£Ê½  ===========
+		// =======  é¥¿æ±‰æ¨¡å¼  ===========
 		
-		// 1.µ±ĞŞ¸ÄÀàµÄ¹¹Ôì·½·¨ÎªprivateÊ±£¬Íâ²¿Àà¾Í²»ÄÜÍ¨¹ı¹¹Ôì·½·¨new¶ÔÏóÁË
+		// 1.å½“ä¿®æ”¹ç±»çš„æ„é€ æ–¹æ³•ä¸ºprivateæ—¶ï¼Œå¤–éƒ¨ç±»å°±ä¸èƒ½é€šè¿‡æ„é€ æ–¹æ³•newå¯¹è±¡äº†
 //		Singleton s1 = new Singleton();
 //		Singleton s2 = new Singleton();
 		
 		
-		// 2.ÎªÁË°²È«ĞÔ£¬°ÑstaticµÄÎ¨Ò»ÊµÀıË½ÓĞ»¯£¬¾Í²»ÄÜÖ±½Ó·ÃÎÊÁË
+		// 2.ä¸ºäº†å®‰å…¨æ€§ï¼ŒæŠŠstaticçš„å”¯ä¸€å®ä¾‹ç§æœ‰åŒ–ï¼Œå°±ä¸èƒ½ç›´æ¥è®¿é—®äº†
 //		Singleton s1 = Singleton.instance;
 //		Singleton s2 = Singleton.instance;
 		
-		// 3.Í¨¹ıgetinstance()·½·¨»ñÈ¡ÊµÀı
+		// 3.é€šè¿‡getinstance()æ–¹æ³•è·å–å®ä¾‹
 		Singleton s1 = Singleton.getInstance();
 		Singleton s2 = Singleton.getInstance();
 		
 		if (s1 == s2) {
-			System.out.println("s1ºÍs2ÊÇÍ¬Ò»¸öÊµÀı");
+			System.out.println("s1å’Œs2æ˜¯åŒä¸€ä¸ªå®ä¾‹");
 		} else {
-			System.out.println("s1ºÍs2²»ÊÇÍ¬Ò»¸öÊµÀı");
+			System.out.println("s1å’Œs2ä¸æ˜¯åŒä¸€ä¸ªå®ä¾‹");
 		}
 		
-		// ==========  ÀÁººÄ£Ê½ ==================
+		// ==========  æ‡’æ±‰æ¨¡å¼ ==================
 		Singleton2 s3 = Singleton2.getInstance();
 		Singleton2 s4 = Singleton2.getInstance();
 		if (s3== s4) {
-			System.out.println("s3ºÍs4ÊÇÍ¬Ò»¸öÊµÀı");
+			System.out.println("s3å’Œs4æ˜¯åŒä¸€ä¸ªå®ä¾‹");
 		} else {
-			System.out.println("s3ºÍs4²»ÊÇÍ¬Ò»¸öÊµÀı");
+			System.out.println("s3å’Œs4ä¸æ˜¯åŒä¸€ä¸ªå®ä¾‹");
 		}
 
 	}
